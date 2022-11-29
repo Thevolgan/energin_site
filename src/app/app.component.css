@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* body{
+    /*margin: 0;
+    padding: 0;*/
+    font-family: 'KoHo', sans-serif;
+    overflow-x: hidden; /*TIRA A BARRA DE SCROLL HORIZONTAL*/
+    background-image: url("../assets/back1.jpg");
+    background-repeat: no-repeat;
+    background-color: #1558FF;
+}
+
+.caontainer{
+    
+    /*background-position: 0px 0px; /*primeiro numero configur a posição geral (vertical/horizontal)
+e o segundo numero configura a altura (horizontal)*/
+}
+
+.title{
+    font-family: 'krona one';
+    font-size: 128px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -115px;
+}
+
+.card-title{
+    height: 30vh;
+    width: 70vw;
+    background-color: #1558FF;
+    border-radius: 50px;
+    opacity: 30%;
+    position: relative;
+    display: flex;
+    top: 160px;
+    left: 200px;
+}
