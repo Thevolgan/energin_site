@@ -1,39 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-* body{
-    /*margin: 0;
-    padding: 0;*/
+body{
+    margin: 0;
+    border-bottom: #1558FF;
+    padding: 0;
     font-family: 'KoHo', sans-serif;
     overflow-x: hidden; /*TIRA A BARRA DE SCROLL HORIZONTAL*/
-    background-image: url("../assets/back1.jpg");
-    background-repeat: no-repeat;
-    background-color: #1558FF;
 }
 
-.caontainer{
-    
-    /*background-position: 0px 0px; /*primeiro numero configur a posição geral (vertical/horizontal)
-e o segundo numero configura a altura (horizontal)*/
+html{
+    scroll-behavior: smooth;
+}
+
+.header-container{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 87vh;
+    background-image: url("../assets/back2.png");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+    border-width: 10px;
+    border-color: #1558FF;
+    position: absolute;
+    left: -15px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initial-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
 .title{
     font-family: 'krona one';
     font-size: 128px;
     color: rgb(255, 255, 255);
+    margin: 0px;
     position: relative;
     display: flex;
     justify-content: center;
-    top: -115px;
+    align-items: center;
+    top: -180px;
+
 }
 
 .card-title{
-    height: 30vh;
-    width: 70vw;
+    height: 200px;
+    width: 1100px;
     background-color: #1558FF;
     border-radius: 50px;
     opacity: 30%;
-    position: relative;
+
     display: flex;
-    top: 160px;
-    left: 200px;
+    align-items: stretch;
+    align-self: flex-end;
+    /*top: 160px;
+    left: 200px;*/
+}
+
+.main-container{
+    height: auto;
+    width: 100%; /*define o tamanho horizontal da main*/
+    height: 2100px;  /*define o tamanho vertical da main*/
+    box-sizing: border-box;
+    display: flex;
+}
+
+.inter-header-main{
+    display: flex;
+    justify-content: center;
+   /*align-items: center;*/
+    flex-direction: row;
+}
+
+.seta{
+    position: absolute;
+    background-image: url(../assets/seta2.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /*animation-name: seta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;*/
+}
+
+.text-bellow-arrow{
+    position: relative;
+    font-family: 'Krona one';
+    box-sizing: border-box;
+    width: 30vw;
+    height: 10vh;
+    left: 120%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+/*estrutura geral de cada um dos 3 rojetos*/
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+}
+
+.card1{/*representa o formato geometrico principal*/
+    width: 300px;
+    height: 300px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(70, 70, 180);
+    /*colocar uma imagem dentro das formas geometricas*/
+    filter: grayscale(0.8);/*da efeito de mudança de cor cinza*/
+    background-image: url(../assets/little.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    flex-direction: column;
+}
+
+.card2{/*representa o formato geometrico principal*/
+    width: 300px;
+    height: 300px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(70, 70, 180);
+    /*colocar uma imagem dentro das formas geometricas*/
+    filter: grayscale(0.8);/*da efeito de mudança de cor cinza*/
+    background-image:  url(../assets/big.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card3{/*representa o formato geometrico principal*/
+    width: 300px;
+    height: 300px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(70, 70, 180);
+    /*colocar uma imagem dentro das formas geometricas*/
+    filter: grayscale(0.8);/*da efeito de mudança de cor cinza*/
+    background-image:  url(../assets/little.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.text1{
+    font-size: 15px;
+    font-family: 'Krona one';
+    max-width: 40px;
+    position: relative;
+    top: 100px;
+}
+
+.card1:hover{
+    filter: unset;/*tira o efeito de mudança de cor cinza*/
+    transform: scale(1.2);
+}
+
+.card2:hover:hover{
+    filter: unset;/*tira o efeito de mudança de cor cinza*/
+    transform: scale(1.2);
+}
+
+.card3:hover:hover{
+    filter: unset;/*tira o efeito de mudança de cor cinza*/
+    transform: scale(1.2);
+}
+
+/*Estilização da barra de scrow*/
+
+::-webkit-scrollbar{
+    background: #1558FF;
+}
+::-webkit-scrollbar-button{ /*botoes*/
+    background: #243C58;
+}
+::-webkit-scrollbar-thumb{ /*barra de scroll*/
+    background: #486177;
+    border: none;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{ /*botoes*/
+    background: #0d5fa7;
 }
