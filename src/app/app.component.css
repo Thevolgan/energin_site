@@ -88,7 +88,7 @@ html{
     width: 100px;
     height: 50px;
     top: 720px;
-    left: 25%;
+    left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,11 +104,11 @@ html{
     text-align: center;
     position: absolute;
     top: 650px;
-    left: 48%;
+    left: 40%;
     font-family: 'Krona one';
     text-decoration: none;
-    color: #1558FF;
-    font-size: 21px;
+    color: #000000;
+    font-size: 15px;
 }
 
 .text-bellow-arrow{
@@ -131,7 +131,13 @@ html{
     flex-direction: column;
 }
 
+.cards-general{
+    background-color: #486177;
+    grid-template-areas: "card1 text1" "card2 text2" "card3 text3";
+}
+
 .card1{/*representa o formato geometrico principal*/
+    grid-area: card1;
     width: 300px;
     height: 300px;
     min-width: 50px;
@@ -158,6 +164,7 @@ html{
 }
 
 .card2{/*representa o formato geometrico principal*/
+    grid-area: card2;
     width: 300px;
     height: 300px;
     min-width: 50px;
@@ -184,6 +191,7 @@ html{
 }
 
 .card3{/*representa o formato geometrico principal*/
+    grid-area: card3;
     width: 300px;
     height: 300px;
     min-width: 50px;
@@ -226,6 +234,7 @@ html{
 }
 
 .text1{
+    grid-area: text1;
     line-height: 50px;
     font-size: 15px;
     font-family: 'Krona one';
@@ -236,9 +245,11 @@ html{
     justify-content: center;
     top: 800px;
     left: 370px;
+    order: 5;
 }
 
 .text2{
+    grid-area: text2;
     line-height: 50px;
     font-size: 15px;
     font-family: 'Krona one';
@@ -252,6 +263,7 @@ html{
 }
 
 .text3{
+    grid-area: text3;
     line-height: 50px;
     font-size: 15px;
     font-family: 'Krona one';
@@ -277,6 +289,49 @@ html{
 .card3:hover:hover{
     filter: unset;/*tira o efeito de mudança de cor cinza*/
     transform: scale(1.2);
+}
+
+.info{
+    background: linear-gradient(90deg, #99CCE2, #DDE1EA);
+    height: auto;
+    font-family: 'krona one';
+    display: grid;
+    grid-template-areas: "info-title info-img" "info-text info-img";
+}
+
+/*FAIXA AZUL DE INFORMAÇÕES*/
+
+.info-title{
+    font-size: 15px;
+    color: #ffff;
+    margin: 25px 25px ;
+    margin-top: 25px;
+    padding: 25px;
+    grid-area: info-title;
+}
+
+.info-text{
+    font-size: 15px;
+    color: #ffff;
+    margin: 25px 25px ;
+    margin-top: 25px;
+    padding: 25px;
+    max-width: 350px;
+    grid-area: info-text;
+}
+
+.info-img{
+    display: flex;
+    align-self: flex-start;
+    grid-area: info-img;
+    filter: grayscale(0.8);
+    background-size: cover;
+    background-position: end;
+    transition: 0.5s ease-in-out;
+}
+
+.info-img:hover{
+    filter: unset;
 }
 
 .footer{
