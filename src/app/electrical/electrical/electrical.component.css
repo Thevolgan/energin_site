@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.header-container{
+    grid-area: header;
+    box-sizing: border-box;
+    width: 100%;
+    height: 87vh;
+    background-image: url("/assets/little.jpg");/*/assets/back2.png*/
+    background-repeat: no-repeat;
+    background-position: initial;
+
+    background-size: cover;
+    border-width: 10px;
+    border-color: #1558FF;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.initial-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.title{
+    font-family: 'krona one';
+    font-size: 128px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -110px;
+
+}
+
+.card-title{
+    height: 200px;
+    width: 1100px;
+    background-color: #1558FF;
+    border-radius: 50px;
+    opacity: 30%;
+    display: flex;
+    align-items: stretch;
+    align-self: flex-end;
+    /*top: 160px;
+    left: 200px;*/
+}
+
+/*CARDS DE IMAGEM*/
+
+.main {
+    display: grid;
+    /*grid-template-rows: "card1 card2" "card4 card5" "card6" "card7";*/
+    height: auto;
+    width: 50px;
+    grid-row-start: 50% 40px;
+}
+.card1{
+    display: grid;
+    background-color: red;
+    grid-area: card1;
+    width: auto;
+    height: 50px;
+}
+.card2{
+    display: grid;
+    background-color: rgb(54, 31, 31);
+    grid-area: card2;
+    height: 70px;
+}
+.card3{
+    display: grid;
+    background-color: rgb(37, 85, 104);
+    grid-area: card3;
+    height: 90px;
+}
+.card4{
+    display: grid;
+    background-color: rgb(34, 255, 0);
+    grid-area: card4;
+    height: 110px;
+}
+.card5{
+    display: grid;
+    background-color: rgb(242, 255, 0);
+    grid-area: card5;
+    height:130px;
+}
+.card6{
+    display: grid;
+    background-color: rgb(47, 0, 255);
+    grid-area: card6;
+    height: 150px;
+}
+.card7{
+    display: grid;
+    background-color: rgb(118, 65, 65);
+    grid-area: card7;
+    height: 170px;
+}
