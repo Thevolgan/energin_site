@@ -75,6 +75,7 @@ html, body{
     grid-area: header;
     box-sizing: border-box;
     width: 100%;
+    min-width: 800px;
     height: 87vh;
     background-image: url("/assets/back2.png");
     background-repeat: no-repeat;
@@ -96,7 +97,7 @@ html, body{
     align-items:center;
 }
 
-.title{
+/*.title{
     font-family: 'krona one';
     font-size: 128px;
     font-weight: lighter;
@@ -108,7 +109,7 @@ html, body{
     align-items: center;
     top: -110px;
 
-}
+}*/
 
 .card-title{
     height: 200px;
@@ -116,9 +117,13 @@ html, body{
     background-color: #1558FF;
     border-radius: 50px;
     opacity: 30%;
-
+    color: #ffff;
+    font-family: 'krona one';
+    font-size: 128px;
+    font-weight: lighter;
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
     align-self: flex-end;
     /*top: 160px;
     left: 200px;*/
@@ -175,15 +180,6 @@ html, body{
     grid-template-areas: "card1 text1" "text2 card2" "card3 text3";
     /*min-width: 1010px;*/
 }
-
-@media (max-width: 100px){
-    .cards-general{
-        background-color: #ffffff;
-        grid-template-areas: "card1" "text1" "text2" "card2" "card3" "text3";
-        /*min-width: 1010px;*/
-    }
-}
-
 .card-container1{
     display: flex;
     justify-content: space-evenly;
@@ -356,6 +352,7 @@ html, body{
 
 .info{
     background: #99CCE2;
+    width: 80%;
     height: auto;
     font-family: 'krona one';
     display: grid;
@@ -591,4 +588,309 @@ html, body{
 }
 ::-webkit-scrollbar-thumb:hover{ /*botoes*/
     background: #0d5fa7;
+}
+
+
+/* MEDIAS QUERY  ------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 824px){  /*RESPONSIVIDADE DO FOOTER for tablet*/
+    .footer{
+        width: 100%;
+        height: 100px;
+        padding: 50px 0px 70px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        columns: auto;
+        text-align: center;
+        font-family: 'Krona one';
+        font-size: 12px;
+        background-color: #b61f1f;
+    
+    }
+
+    .footer-text{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 512px){ /*RESPONSIVIDADE DO FOOTER for cell*/
+    .footer{
+        width: 100%;
+        height: 100px;
+        padding: 100px 0px 70px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        columns: auto;
+        text-align: center;
+        font-family: 'Krona one';
+        font-size: 12px;
+        background-color: #af8181;
+    
+    }
+
+    .footer-text{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px){ /*RESPONSIVIDADE DOS CARDS*/
+    .cards-general{
+        background-color: #ffffff;
+        grid-template-areas: "card1" "text1" "card2" "text2" "card3" "text3";
+        /*min-width: 1010px;*/
+        background-color: #b61f1f;
+        grid-auto-flow: column;
+    }
+    .card-container1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        grid-row-gap: 70px;
+    }
+    .card-container2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        grid-row-gap: 70px;
+    }
+    .card-container3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        grid-row-gap: 70px;
+    }
+    .text1{
+        grid-area: text1;
+        line-height: 50px;
+        
+        font-size: 15px;
+        font-family: 'Krona one';
+        width: 550px;
+        text-align: center;
+    }
+    
+    .text2{
+        grid-area: text2;
+        line-height: 50px;
+        font-size: 15px;
+        font-family: 'Krona one';
+        width: 550px;
+        text-align: center;
+    }
+    
+    .text3{
+        grid-area: text3;
+        line-height: 50px;
+        font-size: 15px;
+        font-family: 'Krona one';
+        width: 550px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 683px){
+    .text1{
+        grid-area: text1;
+        line-height: 50px;
+        
+        font-size: 12px;
+        font-family: 'Krona one';
+        width: 310px;
+        text-align: center;
+    }
+    .text2{
+        grid-area: text2;
+        line-height: 50px;
+        font-size: 12px;
+        font-family: 'Krona one';
+        width: 310px;
+        text-align: center;
+    }
+    .text3{
+        grid-area: text3;
+        line-height: 50px;
+        font-size: 12px;
+        font-family: 'Krona one';
+        width: 310px;
+        text-align: center;
+    }
+    .card1{/*representa o formato geometrico principal*/
+        grid-area: card1;
+        width: 250px;
+        height: 250px;
+
+        border-radius: 100%;
+        margin: 3rem 0 0 0;
+    
+        background: rgb(70, 70, 180);
+        /*colocar uma imagem dentro das formas geometricas*/
+        filter: grayscale(0);/*da efeito de mudança de cor cinza*/
+        background-image: url(/assets/card1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+    }    
+    .card2{/*representa o formato geometrico principal*/
+        grid-area: card2;
+        width: 250px;
+        height: 250px;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 100%;
+        margin: 3rem 0 0 0;
+    
+        background: rgb(70, 70, 180);
+        /*colocar uma imagem dentro das formas geometricas*/
+        filter: grayscale(0);/*da efeito de mudança de cor cinza*/
+        background-image:  url(/assets/card2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    
+    }    
+    .card3{/*representa o formato geometrico principal*/
+        grid-area: card3;
+        width: 250px;
+        height: 250px;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 100%;
+        margin: 3rem 0 0 0;
+    
+        justify-content: center;
+        align-items: center;
+        background: rgb(70, 70, 180);
+        /*colocar uma imagem dentro das formas geometricas*/
+        filter: grayscale(0);/*da efeito de mudança de cor cinza*/
+        background-image:  url(/assets/card3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    
+    }
+}
+
+@media screen and (max-width: 680px){   /*RESPONSIVIDADE DOS ÍCONES*/
+    .general-icons{
+        display: grid;
+        grid-template-areas: "ambiental" "electrical" "civil";
+        grid-auto-flow: column;
+        padding: 120px 0px;
+        grid-column-gap: 100px;
+        grid-row-gap: 50px
+    }
+}
+
+@media screen and (max-width: 570px){ /*RESPONSIVIDADE DOS CONTATOS*/
+    .general-contacts{
+        font-family: 'Krona one';
+        font-weight: lighter;
+        font-size: 15px;
+        padding: 50px 0px 0px 0px;
+        display: grid;
+        grid-template-areas: "icon-email" "email" "icon-phone" "number1";
+        align-items: center;
+        justify-content: space-evenly;
+        grid-auto-flow: column;
+        grid-row-gap: 70px;
+    }
+}
+
+@media screen and (max-width: 1000px){ /*RESPONSIVIDADE DA FAIXA DE INFORMAÇÕES*/
+    .info{
+        background: #99CCE2;
+        width: auto;
+        height: auto;
+        font-family: 'krona one';
+        display: grid;
+        grid-template-areas: "info-title" "info-text" "info-img";
+        padding: 0px 120px;
+    }
+}
+
+@media screen and (max-width: 1141px){ /*RESPONSIVIDADE DO TÍTULO COM SEU CARD e BACKGROUND DO HEADER PART1 for mediun screen*/
+    .card-title{
+        height: 150px;
+        width:120%;
+        background-color: #1558FF;
+        border-radius: 50px;
+        opacity: 30%;
+        color: #ffff;
+        font-family: 'krona one';
+        font-size: 100px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-center;
+        /*top: 160px;
+        left: 200px;*/
+    }
+    .initial-card{
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items:end;
+    }
+    .header-container{
+        grid-area: header;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 80px;
+        height: 87vh;
+        background-image: url("/assets/back2.png");
+        background-repeat: cover;
+        background-position: cover;
+    
+        background-size: cover;
+        border-width: 10px;
+        border-color: #1558FF;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 813px){ /*RESPONSIVIDADE DA IMAGEM DE BACKGROUND NO HEADER PART 2 for small screens*/
+    .header-container{
+        grid-area: header;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 20px;
+        height: 87vh;
+        background-image: url("/assets/back2.png");
+        background-repeat: cover;
+        background-position: cover;
+    
+        background-size: cover;
+        border-width: 10px;
+        border-color: #1558FF;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        z-index: -1;
+    }
 }
