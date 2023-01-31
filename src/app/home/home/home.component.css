@@ -607,7 +607,7 @@ html, body{
         text-align: center;
         font-family: 'Krona one';
         font-size: 12px;
-        background-color: #b61f1f;
+        background-color: #ffffff;
     
     }
 
@@ -630,7 +630,7 @@ html, body{
         text-align: center;
         font-family: 'Krona one';
         font-size: 12px;
-        background-color: #af8181;
+        background-color: #ffffff;
     
     }
 
@@ -639,12 +639,12 @@ html, body{
     }
 }
 
-@media screen and (max-width: 1100px){ /*RESPONSIVIDADE DOS CARDS*/
+@media screen and (max-width: 1100px){ /*RESPONSIVIDADE DOS CARDS for middle screens*/
     .cards-general{
         background-color: #ffffff;
         grid-template-areas: "card1" "text1" "card2" "text2" "card3" "text3";
         /*min-width: 1010px;*/
-        background-color: #b61f1f;
+        background-color: #ffffff;
         grid-auto-flow: column;
     }
     .card-container1{
@@ -700,7 +700,7 @@ html, body{
     }
 }
 
-@media screen and (max-width: 683px){
+@media screen and (max-width: 683px){ /*RESPONSIVIDADE DOS CARDS  for small screens*/
     .text1{
         grid-area: text1;
         line-height: 50px;
@@ -830,6 +830,30 @@ html, body{
     }
 }
 
+@media screen and (max-width: 662px){
+    .info{
+        background: #99CCE2;
+        width: auto;
+        height: auto;
+        font-family: 'krona one';
+        display: grid;
+        grid-template-areas: "info-title" "info-text" "info-img";
+        padding: 0px 50px;
+    }
+    .info-img{
+        width: 80%;
+        display: flex;
+        align-self: flex-start;
+        align-items: end;
+        justify-content: center;
+        grid-area: info-img;
+        filter: grayscale(0.8);
+        background-size: cover;
+        background-position: end;
+        transition: 0.5s ease-in-out;
+    }
+}
+
 @media screen and (max-width: 1141px){ /*RESPONSIVIDADE DO TÍTULO COM SEU CARD e BACKGROUND DO HEADER PART1 for mediun screen*/
     .card-title{
         height: 150px;
@@ -886,11 +910,35 @@ html, body{
         background-position: cover;
     
         background-size: cover;
+        border: none;
         border-width: 10px;
         border-color: #1558FF;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center; 
         z-index: -1;
+    }
+    .card-title{
+        height: 150px;
+        width:10%;
+        background-color: #1558FF;
+        border-radius: 50px;
+        opacity: 30%;
+        color: #ffff;
+        font-family: 'krona one';
+        font-size: 40px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-center;
+        /*top: 160px;
+        left: 200px;*/
+    }
+    .initial-card{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items:start;
     }
 }
