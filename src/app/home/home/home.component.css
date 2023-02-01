@@ -9,7 +9,7 @@ body{
     display: flex;
 
     flex-direction: column;
-
+    scrollbar-width: none;
 }
 
 html, body{
@@ -114,9 +114,9 @@ html, body{
 .card-title{
     height: 200px;
     width: 1100px;
-    background-color: #1558FF;
+    background-color: #078EF1;
     border-radius: 50px;
-    opacity: 30%;
+    opacity: 80%;
     color: #ffff;
     font-family: 'krona one';
     font-size: 128px;
@@ -214,7 +214,7 @@ html, body{
     background: rgb(70, 70, 180);
     /*colocar uma imagem dentro das formas geometricas*/
     filter: grayscale(0.8);/*da efeito de mudança de cor cinza*/
-    background-image: url(/assets/card1.png);
+    background-image: url("/assets/Imagem_site2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ html, body{
 
 .info{
     background: #99CCE2;
-    width: 80%;
+    width: auto;
     height: auto;
     font-family: 'krona one';
     display: grid;
@@ -360,7 +360,9 @@ html, body{
     padding: 0px 120px;
 }
 .info-title{
-    font-size: 15px;
+    font-size: 45px;
+    font-family: 'krona one';
+    line-height: 70px;
     color: #ffff;
     margin: 25px 25px ;
     margin-top: 25px;
@@ -384,6 +386,7 @@ html, body{
     background-size: cover;
     background-position: end;
     transition: 0.5s ease-in-out;
+    
 }
 .info-img:hover{
     filter: unset;
@@ -551,6 +554,7 @@ html, body{
     background-color: #000;
     border-radius: 10px;
     border: solid 1px;
+    margin-bottom: 70px;
 }
 
 .footer{
@@ -570,13 +574,18 @@ html, body{
 
 }
 .last-logo{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 50px 0px;
+}
+.footer-text{
+
 }
 
 /*Estilização da barra de scrow*/
 
-:-webkit-scrollbar{
+::-webkit-scrollbar{
     background: #1558FF;
+    display: flex;
+
 }
 ::-webkit-scrollbar-button{ /*botoes*/
     background: #243C58;
@@ -737,7 +746,7 @@ html, body{
         background: rgb(70, 70, 180);
         /*colocar uma imagem dentro das formas geometricas*/
         filter: grayscale(0);/*da efeito de mudança de cor cinza*/
-        background-image: url(/assets/card1.png);
+        background-image: url("/assets/Imagem_site2.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -828,6 +837,16 @@ html, body{
         grid-template-areas: "info-title" "info-text" "info-img";
         padding: 0px 120px;
     }
+    .info-img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        grid-area: info-img;
+        filter: grayscale(0);
+        background-size: cover;
+        background-position: end;
+        transition: 0.5s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 662px){
@@ -847,7 +866,7 @@ html, body{
         align-items: end;
         justify-content: center;
         grid-area: info-img;
-        filter: grayscale(0.8);
+        filter: grayscale(0);
         background-size: cover;
         background-position: end;
         transition: 0.5s ease-in-out;
@@ -858,9 +877,9 @@ html, body{
     .card-title{
         height: 150px;
         width:120%;
-        background-color: #1558FF;
+        background-color: #078EF1;
         border-radius: 50px;
-        opacity: 30%;
+        opacity: 80%;
         color: #ffff;
         font-family: 'krona one';
         font-size: 100px;
@@ -914,16 +933,24 @@ html, body{
         border-width: 10px;
         border-color: #1558FF;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center; 
         z-index: -1;
     }
+    .initial-card{
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        z-index: 0;
+    }
     .card-title{
-        height: 150px;
-        width:10%;
-        background-color: #1558FF;
+        height: 110px;
+        width:100%;
+        background-color: #078EF1;
         border-radius: 50px;
-        opacity: 30%;
+        opacity: 80%;
         color: #ffff;
         font-family: 'krona one';
         font-size: 40px;
@@ -934,11 +961,6 @@ html, body{
         align-self: flex-center;
         /*top: 160px;
         left: 200px;*/
-    }
-    .initial-card{
-        display:flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items:start;
+        z-index: 0;
     }
 }

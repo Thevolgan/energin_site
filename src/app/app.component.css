@@ -27,6 +27,8 @@
     align-items: center;
     width: 100%;
     font-family: 'Krona one';
+    padding: 0px 0px 0px 20px;
+    border: none;
 }
 .menu-items{
     padding: 0px 15px 0px 0px;
@@ -40,4 +42,40 @@
 }
 .logo{
     background-size: auto;
+    margin: none;
+    padding: none;
+}
+
+
+@media screen and (max-width: 600px){ /*RESPONSIVIDADE DO MENU*/
+    .menu-items{
+        padding: 0px 15px 0px 0px;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .logo{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .menu-items{
+        padding: 0px 15px 0px 0px;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 9px;
+    }
+    .logo{
+        width: 23px;
+        padding: 0px 15px 0px 0px;
+    }
+    .menu-geral{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: 'Krona one';
+    }
 }
