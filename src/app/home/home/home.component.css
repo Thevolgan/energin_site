@@ -749,7 +749,7 @@ html, body{
         background: rgb(70, 70, 180);
         /*colocar uma imagem dentro das formas geometricas*/
         filter: grayscale(0);/*da efeito de mudança de cor cinza*/
-        background-image: url("/assets/Imagem_site2.jpg");
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/imagens-8678d.appspot.com/o/Imagem_site2.jpg?alt=media&token=62450597-7116-4385-8eae-b359c2a966a2);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -770,7 +770,7 @@ html, body{
         background: rgb(70, 70, 180);
         /*colocar uma imagem dentro das formas geometricas*/
         filter: grayscale(0);/*da efeito de mudança de cor cinza*/
-        background-image:  url(/assets/card2.png);
+        background-image:  url(https://firebasestorage.googleapis.com/v0/b/imagens-8678d.appspot.com/o/card2.png?alt=media&token=5d15f2e0-16e9-49d0-87d1-b278bbd1e1ca);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -793,7 +793,7 @@ html, body{
         background: rgb(70, 70, 180);
         /*colocar uma imagem dentro das formas geometricas*/
         filter: grayscale(0);/*da efeito de mudança de cor cinza*/
-        background-image:  url(/assets/card3.png);
+        background-image:  url(https://firebasestorage.googleapis.com/v0/b/imagens-8678d.appspot.com/o/card3.png?alt=media&token=a4f047ab-d175-41b5-9b75-5ff00a2227bd);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -908,7 +908,7 @@ html, body{
         width: 100%;
         min-width: 80px;
         height: 87vh;
-        background-image: url("/assets/back2.png");
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/imagens-8678d.appspot.com/o/back2.png?alt=media&token=c7d4d5d7-f07f-4ab9-9fb4-84b78540982e);
         background-repeat: cover;
         background-position: cover;
         background-size: cover;
@@ -928,7 +928,7 @@ html, body{
         width: 100%;
         min-width: 20px;
         height: 87vh;
-        background-image: url("/assets/back2.png");
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/imagens-8678d.appspot.com/o/back2.png?alt=media&token=c7d4d5d7-f07f-4ab9-9fb4-84b78540982e);
         background-repeat: cover;
         background-position: cover;
         background-size: cover;
