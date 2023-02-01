@@ -135,8 +135,12 @@ html, body{
     width: 100%; /*define o tamanho horizontal da main*/
     box-sizing: border-box;
     padding-bottom: 70px;
-
 }
+
+/*.ultimate_logo{
+    position: fixed
+}
+*/
 
 .inter-header-main{
     display: flex;
@@ -351,7 +355,7 @@ html, body{
 
 
 .info{
-    background: #99CCE2;
+    background: linear-gradient(to right, #99CCE2, #697482);
     width: auto;
     height: auto;
     font-family: 'krona one';
@@ -386,7 +390,7 @@ html, body{
     background-size: cover;
     background-position: end;
     transition: 0.5s ease-in-out;
-    
+
 }
 .info-img:hover{
     filter: unset;
@@ -602,7 +606,7 @@ html, body{
 
 /* MEDIAS QUERY  ------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 824px){  /*RESPONSIVIDADE DO FOOTER for tablet*/
+@media screen and (max-width: 834px){  /*RESPONSIVIDADE DO FOOTER for tablet*/
     .footer{
         width: 100%;
         height: 100px;
@@ -712,27 +716,26 @@ html, body{
 @media screen and (max-width: 683px){ /*RESPONSIVIDADE DOS CARDS  for small screens*/
     .text1{
         grid-area: text1;
-        line-height: 50px;
-        
+        line-height: 34px;
         font-size: 12px;
         font-family: 'Krona one';
-        width: 310px;
+        width: 320px;
         text-align: center;
     }
     .text2{
         grid-area: text2;
-        line-height: 50px;
+        line-height: 34px;
         font-size: 12px;
         font-family: 'Krona one';
-        width: 310px;
+        width: 320px;
         text-align: center;
     }
     .text3{
         grid-area: text3;
-        line-height: 50px;
+        line-height: 34px;
         font-size: 12px;
         font-family: 'Krona one';
-        width: 310px;
+        width: 320px;
         text-align: center;
     }
     .card1{/*representa o formato geometrico principal*/
@@ -839,6 +842,7 @@ html, body{
     }
     .info-img{
         display: flex;
+        width: 500px;
         align-self: center;
         justify-self: center;
         grid-area: info-img;
@@ -894,8 +898,9 @@ html, body{
     .initial-card{
         display:flex;
         flex-direction: column;
-        justify-content: end;
-        align-items:end;
+        justify-content: center;
+        align-items:center;
+        justify-self: flex-center
     }
     .header-container{
         grid-area: header;
@@ -906,7 +911,6 @@ html, body{
         background-image: url("/assets/back2.png");
         background-repeat: cover;
         background-position: cover;
-    
         background-size: cover;
         border-width: 10px;
         border-color: #1558FF;
@@ -927,7 +931,6 @@ html, body{
         background-image: url("/assets/back2.png");
         background-repeat: cover;
         background-position: cover;
-    
         background-size: cover;
         border: none;
         border-width: 10px;
